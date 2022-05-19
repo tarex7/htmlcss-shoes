@@ -6,6 +6,100 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+
+}
 body {
-    font-family: 'Rubik Mono One', sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.product {
+  position: relative;
+  height: 100vh;
+}
+
+
+#main-model-1 {
+  background-color: red;
+}
+#main-model-2 {
+  background-color: green;
+  height: 100vh;
+}
+#main-model-3 {
+  background-color: yellow;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  color: yellow;
+  text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    margin:  50px 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 20px;
+    transition: all ease .4s;
+}
+
+nav li:hover {
+    transform: scale(1.10);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    display: inline-block;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5) ;
+    border: 3px solid #333;
+}
+
+/* Utils */
+
+.product-image {
+  width: 800px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.debug {
+  border: 1px solid white;
+}
+
+.secondary-color {
+  color: green;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.shadow {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
 }
